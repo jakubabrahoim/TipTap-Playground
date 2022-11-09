@@ -1,14 +1,11 @@
 import { NextPage } from 'next';
+import Editor from '../components/Editor';
 
 const LandingPage: NextPage = () => {
     return (
         <div>
-            <h1 className='text-xl text-pink-400'>hello</h1>
-            <div className='flex flex-col'>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
+            <h1>Hello</h1>
+            <Editor />
         </div>
     );
 };
