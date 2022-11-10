@@ -1,0 +1,1 @@
+export type EditorCommand = 'BulletList' | 'OrderedList' | 'Bold' | 'Italic' | 'Strike' | 'Underline';

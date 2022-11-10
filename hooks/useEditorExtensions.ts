@@ -4,6 +4,7 @@ import Text from '@tiptap/extension-text';
 import Bold from '@tiptap/extension-bold';
 import Italic from '@tiptap/extension-italic';
 import Strike from '@tiptap/extension-strike';
+import Underline from '@tiptap/extension-underline';
 import Code from '@tiptap/extension-code';
 import CodeBlock from '@tiptap/extension-code-block';
 import Heading from '@tiptap/extension-heading';
@@ -25,6 +26,7 @@ export const useEditorExtensions = () => {
         Bold.configure({ HTMLAttributes: { class: 'font-extrabold' } }),
         Italic,
         Strike,
+        Underline,
         Code,
         CodeBlock,
         Heading.configure({

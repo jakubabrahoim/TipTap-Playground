@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import Editor from '../components/Editor';
+import Editor from '../components/Editor/Editor';
 
 const LandingPage: NextPage = () => {
     return (

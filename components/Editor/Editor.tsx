@@ -1,5 +1,5 @@
 import { useEditor, EditorContent } from '@tiptap/react';
-import { useEditorExtensions } from '../hooks/useEditorExtensions';
+import { useEditorExtensions } from '../../hooks/useEditorExtensions';
 import EditorFixedMenu from './EditorFixedMenu';
 
 const Editor = () => {
