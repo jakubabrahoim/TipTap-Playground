@@ -36,20 +36,34 @@ export const useEditorExtensions = () => {
         BulletList.configure({
             itemTypeName: 'listItem',
             HTMLAttributes: {
-                class: '!list-disc',
+                class: 'list-disc',
             },
         }),
         OrderedList.configure({
             itemTypeName: 'listItem',
             HTMLAttributes: {
-                class: '!list-decimal',
+                class: 'list-decimal',
             },
         }),
-        ListItem,
+        ListItem.configure({
+            HTMLAttributes: {
+                class: 'list-disc',
+            },
+        }),
         BubbleMenu,
         Typography,
-        TaskItem,
-        TaskList,
+        TaskItem.configure({
+            HTMLAttributes: {
+                class: 'list-none',
+            },
+            nested: true,
+        }),
+        TaskList.configure({
+            itemTypeName: 'taskItem',
+            HTMLAttributes: {
+                class: 'list-none',
+            },
+        }),
         HorizontalRule,
     ];
 
