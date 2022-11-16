@@ -7,7 +7,8 @@ const Editor = () => {
 
     const editor = useEditor({
         extensions: extensions,
-        content: '<ul><li>First item</li><li>Second item</li></ul>',
+        content:
+            '<ul><li>First item</li><li>Second item</li></ul><ol><li>1st ol item</li></ol>',
         editorProps: {
             attributes: {
                 class: 'outline-none border rounded-md p-2',

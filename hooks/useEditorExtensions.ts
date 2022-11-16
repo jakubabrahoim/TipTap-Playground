@@ -36,19 +36,19 @@ export const useEditorExtensions = () => {
         BulletList.configure({
             itemTypeName: 'listItem',
             HTMLAttributes: {
-                class: 'list-disc',
+                class: 'list-disc pl-4',
             },
         }),
         OrderedList.configure({
             itemTypeName: 'listItem',
             HTMLAttributes: {
-                class: 'list-decimal',
+                class: 'list-decimal pl-4',
             },
         }),
         ListItem.configure({
-            HTMLAttributes: {
-                class: 'list-disc',
-            },
+            HTMLAttributes: ({ node }: Record<string, any>) => ({
+                class: node.parent.type.name === 'orderedList' ? 'list-decimal' : 'list-disc',
+            })
         }),
         BubbleMenu,
         Typography,
